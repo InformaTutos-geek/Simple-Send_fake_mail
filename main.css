@@ -1,0 +1,157 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+*
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+img
+{
+    display: none;
+}
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(back.jpg)
+    ;background-attachment: scroll;
+    background-repeat: no-repeat
+    ;background-size: cover;
+}
+.content
+{
+    width:auto;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.content-site
+{
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+#tete h1
+{
+    text-align: center;
+    color: greenyellow;
+}
+#form
+{
+    color: blanchedalmond;
+}
+#form h1
+{
+    text-align: center;
+    color: blanchedalmond;
+}
+#form label
+{
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.labcenter
+{
+    display: block;
+    text-align: center;
+}
+#form input[type="text"], #form input[type="email"], #form input[type="password"]
+{
+    padding: 10px;
+    text-align:center;
+    color: rgb(113, 121, 45);
+    border: 2px solid gray;
+    border-radius: 24px;
+    outline: none;
+    transition: 0.25s;
+}
+#form input[type="text"]:focus, #form input[type="email"]:focus, #form input[type="password"]:focus
+{
+    width: 280px;
+    border-color: chartreuse;
+}
+#form input[type="submit"]
+{
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size:15px;
+    padding: 10px;
+    text-align: center;
+    background-color: #7ac9b7;
+    color: rgb(10, 10, 10);
+    border: 2px solid gray;
+    border-radius: 24px;
+    outline: none;
+    transition: 0.25s;
+    cursor: pointer;
+}
+#form input[type="submit"]:focus
+{
+    width:50%;
+    text-align: center;
+    border-color: chartreuse;
+}
+#form input[type="submit"]:hover
+{
+    background-color: rgb(143, 220, 20);
+    color: rgb(255, 30, 0);
+}
+#pied p
+{
+    text-align: center;
+    color: chocolate;
+    font-size: 19px;
+}
+#pied .p
+{
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+marquee
+{
+    color:rgb(221, 68, 41);
+    font-size: 25px;
+}
+textarea
+{
+    outline: none;
+    width:94%;
+    padding: 15px;
+    margin-top:10px;
+    border:1px solid #7ac9b7;
+    border-radius:5px;
+    margin-bottom:20px;
+    resize:none;
+}
+/*MEDIA QUERIES FOR RESPONSIVE
+@media screen and (max-width: 1200px) and ( min-width: 601px)
+{.content
+    {
+        width: 80%;
+        margin: 75px;
+    }
+}*/
+@media screen and (max-width: 480px)
+{
+    .content
+    {
+        width: auto;
+    }
+    #tete h1
+    {
+        text-align: center;
+        color: greenyellow;
+    }
+    #pied .p
+    {
+    text-align: center;
+    font-size: 15px;
+    color: red;
+    }
+}
